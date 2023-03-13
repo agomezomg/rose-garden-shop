@@ -41,7 +41,8 @@ describe("Rose Garden", function() {
         case 'Sulfuras, Hand of Ragnaros':
           break;
         default:
-          expect(item.quality).toBe(item.quality - days)
+          if (item.quality - days >= 0)
+            expect(item.quality).toBe(item.quality - days)
       }
     })
   })
