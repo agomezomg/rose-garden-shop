@@ -21,7 +21,7 @@ const { Shop, Item } = require("../src/rose_garden");
     console.log(`\n-------- day ${day} --------`);
     console.log("name, sellIn, quality");
     items.forEach(item => console.log(`${item.name}, ${item.sellIn}, ${item.quality}`));
-    roseGarden.updateQuality2();
+    roseGarden.updateQuality();
   }
   process.exit(0)
 })();
